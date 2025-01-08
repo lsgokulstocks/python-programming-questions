@@ -14,8 +14,8 @@ even_nums=[]
 for num in nums:
     if num%2==0:
         even_nums.append(num)
+        print(num)
 
-print(even_nums)
 
 
 </sol>
@@ -40,7 +40,9 @@ print(even_nums)
 ## Output 1
 
 ```
-[2,6,8]
+2
+6
+8
 ```
 
 
@@ -57,7 +59,9 @@ print(even_nums)
 ## Output 1
 
 ```
-[2,4,6]
+2
+4
+6
 ```
 
 
