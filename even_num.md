@@ -10,11 +10,14 @@ tags: ['sample tag1', 'sample tag2']
 <template>
 <sol> 
 nums = list(map(int, input().split()))
-find_num=int(input())
+even_nums=[]
 for num in nums:
-    if num==find_num:
-        return True
-print(my_nums)
+    if num%2==0:
+        even_nums.append(num)
+
+print(even_nums)
+
+
 </sol>
 </template>
 <suffix>
@@ -31,13 +34,13 @@ print(my_nums)
 
 ```
 1 2 3 5 6 7 8
-2
+
 ```
 
 ## Output 1
 
 ```
-True
+[2,6,8]
 ```
 
 
@@ -48,13 +51,13 @@ True
 
 ```
 2 4 6
-5
+
 ```
 
 ## Output 1
 
 ```
-False
+[2,4,6]
 ```
 
 
