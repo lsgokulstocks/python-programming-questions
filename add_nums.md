@@ -7,14 +7,11 @@ tags: ['sample tag1', 'sample tag2']
 
 # Solution
 ```python test.py  -r 'python test.py'
-<prefix>
-
-</prefix>
 <template>
 <sol>
-    num1=int(input())
-    num2=int(input())
-    print(num1+num2)
+num1=int(input())
+num2=int(input())
+print(num1+num2)
  </sol>
 </template>
 <suffix>
