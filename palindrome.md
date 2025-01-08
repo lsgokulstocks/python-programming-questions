@@ -1,5 +1,5 @@
 ---
-title: Sample Title
+title: Find Palindrome words
 tags: ['sample tag1', 'sample tag2']
 ---
 
@@ -9,14 +9,14 @@ tags: ['sample tag1', 'sample tag2']
 ```python test.py  -r 'python test.py'
 <template>
 <sol> 
-nums = list(map(int, input().split()))
-target=int(input())
-for num in nums:
-    rem=target-num
-    if ((rem in nums)==True and (nums.index(rem) != nums.index(num))):
-        print(nums.index(num))
-        print(nums.index(rem))
-        break
+word=str(input())
+opp_word=word[::-1]
+
+if word==opp_word:
+    print(True)
+else:
+    print(False)
+
  </sol>
 </template>
 <suffix>
@@ -32,17 +32,15 @@ for num in nums:
 ## Input 1
 
 ```
-2 7 11 15
-9
-
+gokul
 ```
 
 ## Output 1
 
 ```
-0
-1
+False
 ```
+
 
 
 # Private Test Cases
@@ -50,16 +48,12 @@ for num in nums:
 ## Input 1
 
 ```
-3 2 4
-6
-
+mom
 ```
 
 ## Output 1
 
 ```
-1
-2
+True
 ```
-
 
