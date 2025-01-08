@@ -25,7 +25,6 @@ def add_string_numbers(num1:str, num2:str)-> str:
     '''
     <los>...</los>
     <sol>return str(int(num1)+int(num2))</sol>
-    # test = <los>...</los><sol>'test'</sol> #tests
 </template>
 <suffix>
 # some suffix

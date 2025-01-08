@@ -11,15 +11,16 @@ tags: ['sample tag1', 'sample tag2']
 
 </prefix>
 <template>
-def trial_question(a:int,b:int):
-
-<sol> return a+b </sol>
+<sol>
+    num1=int(input())
+    num2=int(input())
+    print(num1+num2)
+ </sol>
 </template>
 <suffix>
 
 </suffix>
 <suffix_invisible>
-{% include './function_type_and_modify_check_suffix.py.jinja' %}
 </suffix_invisible>
 ```
 
@@ -29,15 +30,14 @@ def trial_question(a:int,b:int):
 
 
 ```
-dummy_equal(
-    9, trial_question(5,4)
-)
+1
+2
 ```
 
 ## Output 1
 
 ```
-9
+3
 ```
 
 
@@ -46,9 +46,8 @@ dummy_equal(
 ## Input 1
 
 ```
-dummy_equal(
-    9, trial_question(5,4)
-)
+4
+5
 ```
 
 ## Output 1
