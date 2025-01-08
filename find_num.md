@@ -1,5 +1,5 @@
 ---
-title: Sample Title
+title: Find Num
 tags: ['sample tag1', 'sample tag2']
 ---
 
@@ -8,16 +8,20 @@ tags: ['sample tag1', 'sample tag2']
 # Solution
 ```python test.py  -r 'python test.py'
 <template>
-<sol>
-num1=int(input())
-num2=int(input())
-print(num1+num2)
+<sol> 
+nums = list(map(int, input().split()))
+find_num=int(input())
+for num in nums:
+    if num==find_num:
+        return True
+print(my_nums)
 </sol>
 </template>
 <suffix>
 
 </suffix>
 <suffix_invisible>
+
 </suffix_invisible>
 ```
 
@@ -25,17 +29,17 @@ print(num1+num2)
 
 ## Input 1
 
-
 ```
-1
+1 2 3 5 6 7 8
 2
 ```
 
 ## Output 1
 
 ```
-3
+True
 ```
+
 
 
 # Private Test Cases
@@ -43,12 +47,15 @@ print(num1+num2)
 ## Input 1
 
 ```
-4
+2 4 6
 5
 ```
 
 ## Output 1
 
 ```
-9
+False
 ```
+
+
+
